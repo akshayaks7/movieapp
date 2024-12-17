@@ -1,27 +1,39 @@
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#5FCCC2"
+    android:background="@drawable/grad"
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="186dp"
+        android:layout_height="100dp"
+        android:background="@drawable/baseline_abc_24" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Username"/>
     <EditText
+        android:drawableLeft="@drawable/user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/e1"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Password"/>
     <EditText
+        android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/e2"
         />
+
     <Button
         android:text="Login"
+        android:id="@+id/b1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
